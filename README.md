@@ -1,6 +1,6 @@
 Works in Firefox
 
-```js
+```html
 <script type="text/javascript" src="html2canvas.js"></script>
 <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="base64.js"></script>

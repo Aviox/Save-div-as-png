@@ -9,11 +9,24 @@ Works in Firefox
 
 ```js
 
-// jQuery injection
+// scripts injection
 
 var sc=document.createElement('script');
 sc.src="http://code.jquery.com/jquery-1.9.1.js";
 document.getElementsByTagName('head')[0].appendChild(sc);
+
+sc=document.createElement('script');
+sc.src="https://raw.github.com/Aviox/Save-div-as-png/master/base64.js";
+document.getElementsByTagName('head')[0].appendChild(sc);
+
+sc=document.createElement('script');
+sc.src="https://raw.github.com/Aviox/Save-div-as-png/master/canvas2image.js";
+document.getElementsByTagName('head')[0].appendChild(sc);
+
+sc=document.createElement('script');
+sc.src="https://raw.github.com/Aviox/Save-div-as-png/master/html2canvas.js";
+document.getElementsByTagName('head')[0].appendChild(sc);
+
 $().jquery;
 
 // Facebook scroll down

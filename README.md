@@ -8,11 +8,20 @@ Works in Firefox
 ```
 
 ```js
-/* 
+
+// jQuery injection
+
 var sc=document.createElement('script');
 sc.src="http://code.jquery.com/jquery-1.9.1.js";
 document.getElementsByTagName('head')[0].appendChild(sc);
-*/
+
+// Facebook scroll down
+
+setTimeout(function () { 
+  document.getElementById('group_mall_222256717910544').lastChild.scrollIntoView(); 
+}, 2000);
+
+// proper function
 
 var saveImage = function (div) {
 	html2canvas($(div)[0], {

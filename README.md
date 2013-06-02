@@ -12,7 +12,7 @@ Works in Firefox
 // scripts injection
 
 var sc=document.createElement('script');
-sc.src="http://code.jquery.com/jquery-1.9.1.js";
+sc.src="https://raw.github.com/Aviox/Save-div-as-png/master/jquery-1.9.1.min.js";
 document.getElementsByTagName('head')[0].appendChild(sc);
 
 $().jquery;

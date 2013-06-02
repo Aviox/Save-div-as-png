@@ -29,12 +29,18 @@ document.getElementsByTagName('head')[0].appendChild(sc);
 
 $().jquery;
 
-// Facebook scroll down
+// Facebook posts scroll down
 
 var interval = setInterval(function () { 
   //document.getElementById('group_mall_222256717910544').lastChild.scrollIntoView(); 
   document.getElementById('pagelet_group_mall').firstChild.firstChild.lastChild.scrollIntoView();
 }, 2000);
+
+// expand Facebook comments
+
+$("#pagelet_group_mall span").filter(function () { 
+  return /Zobacz więcej komentarzy/.test($(this).text())
+}).click();
 
 // proper function
 

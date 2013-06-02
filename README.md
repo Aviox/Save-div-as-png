@@ -32,19 +32,20 @@ $().jquery;
 // Facebook scroll down
 
 var interval = setInterval(function () { 
-  document.getElementById('group_mall_222256717910544').lastChild.scrollIntoView(); 
+  //document.getElementById('group_mall_222256717910544').lastChild.scrollIntoView(); 
+  document.getElementById('pagelet_group_mall').firstChild.firstChild.lastChild.scrollIntoView();
 }, 2000);
 
 // proper function
 
 var saveImage = function (div) {
-	html2canvas($(div)[0], {
-		onrendered: function(canvas) {
-			$(div).html(canvas);
-			//Canvas2Image.saveAsPNG($(div).find("canvas").first()[0]);
-		}
+  html2canvas($(div)[0], {
+    onrendered: function(canvas) {
+      $(div).html(canvas);
+      //Canvas2Image.saveAsPNG($(div).find("canvas").first()[0]);
+    }
 	
-	});
+  });
 };
 ```
 
@@ -52,7 +53,10 @@ var saveImage = function (div) {
 Example:
 
 ```js
-$("#group_mall_230539737076122 > div").each(function(index) {
+
+// struktura:  div z id pagelet_group_mall > zaglebiony div (nieistotny) > div z postami > divy "dzieci" - posty
+
+$("#pagelet_group_mall > div > div > div").first().each(function(index) {
   //console.log($(this).attr("id"))
   saveImage($(this));
 });

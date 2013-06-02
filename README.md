@@ -17,7 +17,7 @@ document.getElementsByTagName('head')[0].appendChild(sc);
 
 // Facebook scroll down
 
-setTimeout(function () { 
+var interval = setInterval(function () { 
   document.getElementById('group_mall_222256717910544').lastChild.scrollIntoView(); 
 }, 2000);
 

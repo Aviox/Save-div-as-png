@@ -15,6 +15,8 @@ var sc=document.createElement('script');
 sc.src="http://code.jquery.com/jquery-1.9.1.js";
 document.getElementsByTagName('head')[0].appendChild(sc);
 
+$().jquery;
+
 sc=document.createElement('script');
 sc.src="https://raw.github.com/Aviox/Save-div-as-png/master/base64.js";
 document.getElementsByTagName('head')[0].appendChild(sc);
@@ -26,8 +28,6 @@ document.getElementsByTagName('head')[0].appendChild(sc);
 sc=document.createElement('script');
 sc.src="https://raw.github.com/Aviox/Save-div-as-png/master/html2canvas.js";
 document.getElementsByTagName('head')[0].appendChild(sc);
-
-$().jquery;
 
 // Facebook posts scroll down
 
@@ -49,8 +49,7 @@ var saveImage = function (div) {
     onrendered: function(canvas) {
       $(div).html(canvas);
       //Canvas2Image.saveAsPNG($(div).find("canvas").first()[0]);
-    }
-	
+    }	
   });
 };
 ```

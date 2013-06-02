@@ -56,7 +56,7 @@ Example:
 
 // struktura:  div z id pagelet_group_mall > zaglebiony div (nieistotny) > div z postami > divy "dzieci" - posty
 
-$("#pagelet_group_mall > div > div > div").first().each(function(index) {
+$("#pagelet_group_mall > div > div > div").each(function(index) {
   //console.log($(this).attr("id"))
   saveImage($(this));
 });

@@ -14,6 +14,7 @@ Works in Firefox
 var sc=document.createElement('script');
 sc.src="http://code.jquery.com/jquery-1.9.1.js";
 document.getElementsByTagName('head')[0].appendChild(sc);
+$().jquery;
 
 // Facebook scroll down
 
